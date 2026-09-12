@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleJS.css"/>
+    <title>calcolatrice</title>
+</head>
+<body>
+
+    <div id="container">
+        <input type="text" id="display" placeholder="0"/> 
+    
+        <div id="buttons">
+        <div id="flex">
+            <button id="tasto" onclick="aggiungiValore(`7`)">7</button>
+            <button id="tasto" onclick="aggiungiValore(`8`)">8</button>
+            <button id="tasto" onclick="aggiungiValore(`9`)">9</button>
+            <button id="tasto" onclick="aggiungiValore(`/`)">/</button>
+        </div>
+        <div id="flex">
+            <button id="tasto" onclick="aggiungiValore(`4`)">4</button>
+            <button id="tasto" onclick="aggiungiValore(`5`)">5</button>
+            <button id="tasto" onclick="aggiungiValore(`6`)">6</button>
+            <button id="tasto" onclick="aggiungiValore(`*`)">*</button>
+        </div>
+        <div id="flex">
+            <button id="tasto" onclick="aggiungiValore(`1`)">1</button>
+            <button id="tasto" onclick="aggiungiValore(`2`)">2</button>
+            <button id="tasto" onclick="aggiungiValore(`3`)">3</button>
+            <button id="tasto" onclick="aggiungiValore(`-`)">-</button>
+        </div>
+        <div id="flex">
+            <button id="tasto" onclick="cancellaValore(``)">C</button>
+            <button id="tasto" onclick="aggiungiValore(`0`)">0</button>
+            <button id="tasto"onclick="aggiungiValore(`.`)">.</button>
+            <button id="tasto"onclick="aggiungiValore(`+`)">+</button>
+        </div>
+            <button id="resultbutton" onclick="mostraRisultato()">=</button>  
+        </id>
+    </div>
+    
+    <script src="scriptfinale.js"></script>
+</body>
+</html>

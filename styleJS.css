@@ -1,0 +1,45 @@
+#flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 160px; /* grandezza totale della calcolatrice */
+  gap: 5px; /* spazio tra i tasti */
+  justify-content: left;
+}
+
+#container {
+    margin: 80px auto;
+    width: 160px;
+}
+
+/*bottoni*/
+#tasto {
+    width: 33px;
+    height: 33px;
+    margin:1px;
+    border-radius: 0%;
+    border-color: rgb(193, 193, 193);
+    color: rgb(18 108 149);
+    font-size: large;
+}
+
+
+/*placeholder*/
+#display { 
+    width: 148px;
+    height: 30px;
+    margin-bottom: 3px;
+    border-radius: 0%;
+    border-color: rgb(18 108 149);
+    font-size: large;
+}
+
+/*bottone risultato*/
+#resultbutton {
+    width: 154px;
+    height: 33px;
+    margin-top: 3px;
+    border-radius: 0%;
+    border-color: rgb(193, 193, 193);
+    color: rgb(18 108 149);
+    font-size: large;
+}
