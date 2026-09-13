@@ -1,45 +1,108 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d8c7aa;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#container {
+    width: 320px;
+    padding: 25px;
+    background: #34483d;
+    border-radius: 18px;
+    border: 5px solid #26372f;
+    box-shadow: 8px 8px 0 #1f2925, 15px 15px 25px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+}
+
 #flex {
   display: flex;
-  flex-wrap: wrap;
-  width: 160px; /* grandezza totale della calcolatrice */
+  flex-wrap: nowrap;
   gap: 5px; /* spazio tra i tasti */
   justify-content: left;
 }
 
-#container {
-    margin: 80px auto;
-    width: 160px;
-}
-
 /*bottoni*/
 #tasto {
-    width: 33px;
-    height: 33px;
-    margin:1px;
-    border-radius: 0%;
-    border-color: rgb(193, 193, 193);
-    color: rgb(18 108 149);
-    font-size: large;
+    height: 55px;
+    width: 55px;
+    border: 3px solid #3f6b56b8;
+    border-radius: 8px;
+    font-family: "Jersey 10", sans-serif;
+    font-style: normal;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #1f2925;
+    transition: 0.1s;
+}
+
+#tasto:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
+
+.numbers{
+    background: #e5dcc7;
+    color: #26372f;
+}
+
+.operators {
+    background: #29352f;
+    color: #f1e6cf;
+}
+
+.cancell {
+    background: #d77a32;
+    color: #fff5df;
 }
 
 
 /*placeholder*/
-#display { 
-    width: 148px;
-    height: 30px;
-    margin-bottom: 3px;
-    border-radius: 0%;
-    border-color: rgb(18 108 149);
-    font-size: large;
+#display {
+    width: 100%;
+    height: 75px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 6px solid #26372f;
+    border-radius: 8px;
+    background: #a8ad82;
+    color: #26372f;
+    font-family: "Jersey 10", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: right;
+    box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.35);
+    outline: none;
 }
 
 /*bottone risultato*/
 #resultbutton {
-    width: 154px;
+    width: 235px;
     height: 33px;
     margin-top: 3px;
-    border-radius: 0%;
+    border-radius: 8px;
     border-color: rgb(193, 193, 193);
     color: rgb(18 108 149);
     font-size: large;
+    border: 3px solid #3f6b56b8;
+    background: #d77a32;
+    color: #fff5df;
+    box-shadow: 3px 3px 0 #1f2925;
 }
+
+.name {
+    margin: 0 0 8px 5px;
+    color: #d8c7aa;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
