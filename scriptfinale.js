@@ -8,7 +8,13 @@ function aggiungiValore(value) {
     let display = document.getElementById("display");
     //display.value rappresenta il testo attualmente scritto dentro l’input
     //L’operatore += significa “aggiungi e aggiorna”:Prendi quello che c’è già nel display e aggiungi il nuovo numero (o simbolo) appena cliccato.
-    display.value += value;
+    if (display.value === "0") {
+    //se il valore è 0 aggiungi valore
+        display.value = value;
+    } else {
+    //se il valore è qualsiasi altro numero aggiungi il valore selezionato
+        display.value += value;
+    }
 }
 
 
