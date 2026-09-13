@@ -3,40 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Castoro:ital@0;1&family=Geist+Pixel&family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styleJS.css"/>
     <title>calcolatrice</title>
 </head>
 <body>
 
     <div id="container">
+        <p class="name">⭐︎ CALCOLATRICE ⭐︎</p>
         <input type="text" id="display" placeholder="0"/> 
     
-        <div id="buttons">
+        <id id="buttons">
         <div id="flex">
-            <button id="tasto" onclick="aggiungiValore(`7`)">7</button>
-            <button id="tasto" onclick="aggiungiValore(`8`)">8</button>
-            <button id="tasto" onclick="aggiungiValore(`9`)">9</button>
-            <button id="tasto" onclick="aggiungiValore(`/`)">/</button>
+            <button class="numbers" id="tasto" onclick="aggiungiValore(`7`)">7</button>
+            <button class="numbers" id="tasto" onclick="aggiungiValore(`8`)">8</button>
+            <button class="numbers" id="tasto" onclick="aggiungiValore(`9`)">9</button>
+            <button class="operators" id="tasto" onclick="aggiungiValore(`/`)">/</button>
         </div>
         <div id="flex">
-            <button id="tasto" onclick="aggiungiValore(`4`)">4</button>
-            <button id="tasto" onclick="aggiungiValore(`5`)">5</button>
-            <button id="tasto" onclick="aggiungiValore(`6`)">6</button>
-            <button id="tasto" onclick="aggiungiValore(`*`)">*</button>
+            <button class="numbers" id="tasto" onclick="aggiungiValore(`4`)">4</button>
+            <button class="numbers" id="tasto" onclick="aggiungiValore(`5`)">5</button>
+            <button class="numbers" id="tasto" onclick="aggiungiValore(`6`)">6</button>
+            <button class="operators" id="tasto" onclick="aggiungiValore(`*`)">*</button>
         </div>
         <div id="flex">
-            <button id="tasto" onclick="aggiungiValore(`1`)">1</button>
-            <button id="tasto" onclick="aggiungiValore(`2`)">2</button>
-            <button id="tasto" onclick="aggiungiValore(`3`)">3</button>
-            <button id="tasto" onclick="aggiungiValore(`-`)">-</button>
+            <button class="numbers" id="tasto" onclick="aggiungiValore(`1`)">1</button>
+            <button class="numbers" id="tasto" onclick="aggiungiValore(`2`)">2</button>
+            <button class="numbers" id="tasto" onclick="aggiungiValore(`3`)">3</button>
+            <button class="operators" id="tasto" onclick="aggiungiValore(`-`)">-</button>
         </div>
         <div id="flex">
-            <button id="tasto" onclick="cancellaValore(``)">C</button>
-            <button id="tasto" onclick="aggiungiValore(`0`)">0</button>
-            <button id="tasto"onclick="aggiungiValore(`.`)">.</button>
-            <button id="tasto"onclick="aggiungiValore(`+`)">+</button>
+            <button class="cancell" id="tasto" onclick="cancellaValore(``)">C</button>
+            <button class="numbers" id="tasto" onclick="aggiungiValore(`0`)">0</button>
+            <button class="operators" id="tasto"onclick="aggiungiValore(`.`)">.</button>
+            <button class="operators" id="tasto" onclick="aggiungiValore(`+`)">+</button>
         </div>
-            <button id="resultbutton" onclick="mostraRisultato()">=</button>  
+            <button class="uguale" id="resultbutton" onclick="mostraRisultato()">=</button>  
         </id>
     </div>
     
