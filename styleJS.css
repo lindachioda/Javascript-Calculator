@@ -18,19 +18,23 @@ body {
     border: 5px solid #26372f;
     box-shadow: 8px 8px 0 #1f2925, 15px 15px 25px rgba(0, 0, 0, 0.35);
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #flex {
   display: flex;
   flex-wrap: nowrap;
-  gap: 5px; /* spazio tra i tasti */
+  gap: 15px; /* spazio tra i tasti */
   justify-content: left;
+  margin-bottom: 10px;
 }
 
 /*bottoni*/
 #tasto {
-    height: 55px;
-    width: 55px;
+    height: 48px;
+    width: 48px;
     border: 3px solid #3f6b56b8;
     border-radius: 8px;
     font-family: "Jersey 10", sans-serif;
